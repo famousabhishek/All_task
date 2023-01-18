@@ -1,0 +1,43 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image:linear-gradient(to bottom left ,yellow,blue);
+    height: 270px;
+background-repeat: no-repeat;
+}
+
+img{
+width: 230px;
+height: 210px;
+margin-left: 500px;
+border-radius: 50%;
+}
+
+h1{
+margin-left:470px ;
+
+}
+p{
+margin-left: 50px;
+
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.png{
+    margin-top: -65px;
+    margin-left: 100px;
+    
+    
+}

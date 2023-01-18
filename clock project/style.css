@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+.time,
+.left-side,
+.right-side,
+.right-top,
+.right-down {
+  display: flex;
+  justify-content: center;
+  align-itmes: center;
+}
+
+.digital-clock,
+.time,
+.right-side,
+.right-top,
+.right-down {
+  position: relative;
+}
+body {
+  margin-top: 200px;
+  min-height: 30vh;
+  background: #2e2e45;
+}
+.digital-clock {
+  color: #fff;
+  background: #2d2f38;
+  width: 425px;
+  padding: 20px 45px;
+     /*box-shadow: 0 5px 25px rgba(14,21,37,.8);*/
+  border-radius: 10px;
+}
+
+.digital-clock::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(45deg, blue, orange,skyblue, green);
+  background-size: 300% 300%;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  filter: blur(30px);
+  animation: glowing 3s ease infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#hours {
+  position: relative;
+  top: 10px;
+  padding: 0 20px;
+  line-height: 125px;
+  font-size: 8em;
+  background: -webkit-linear-gradient(90deg, blue, white);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.right-side {
+  flex-direction: column;
+}
+#dots {
+  position: relative;
+  left: -3px;
+  top: 10px;
+  font-size: 2.5em;
+  transform: translateY(-3px);
+  color: gray;
+}
+#minutes {
+  position: relative;
+  top: -10px;
+  font-weight: 500;
+  font-size: 54px;
+}
+#minutes {
+  font-size: 7sem;
+  margin-left: 10px;
+  transform: translateY(10px);
+  background: -webkit-linear-gradient(90deg, rgb(202, 87, 106), white);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.right-down {
+  margin-left: 10px;
+  transform: translateY(-25px);
+}
+
+
+  #period,#seconds {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-left: 10px;
+}
+#period {
+  color: orange;
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+}
+#seconds {
+  color: white;
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+}
+ 
+.digital-clock:hover{
+  background: linear-gradient(45deg, rgb(57, 57, 109), rgb(62, 117, 90), rgb(17, 36, 17));
+  
+}

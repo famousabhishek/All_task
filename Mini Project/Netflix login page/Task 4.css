@@ -1,0 +1,135 @@
+*{
+	padding:0;
+margin:0;
+
+
+}
+.position{
+	
+	background-image:url(https://assets.nflxext.com/ffe/siteui/vlv3/3a073c5f-0160-4d85-9a42-6f59aa4b64b9/ce862595-09a3-4fbf-b41c-76386c05f759/IN-en-20220718-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+	background-image: url(screenshot.png);
+	background-repeat: no-repeat;
+	font-family: system-ui;
+	font-size:15px;
+	
+	
+}
+
+.boxes{
+	
+	background-color:rgba(0,0,0,0.8);
+	color:white;
+	width:300px;
+	height:370px;
+	margin:200px;
+	padding:50px;
+	border-radius:10px;
+	position:relative;
+	top:-60px;
+	right:-250px;
+ 
+}
+input[type="text"]{
+	width:300px;
+	padding:8px;
+	outline-color:none;
+	border-radius:2px;
+	background-color:rgba(0,0,0,1);
+	font-size:15px;
+	
+	
+}
+input[type="password"]{
+	width:300px;
+	padding:8px;
+    outline-color:red;
+	border-radius:2px;
+	background-color:rgba(0,0,0,1);
+	font-size:15px;
+}
+input[type="submit"]{
+	width:300px;
+	padding:8px;
+	outline-color:red;
+	border-radius:4px;
+	background-color:red;
+	font-size:15px;
+	color:white;
+	cursor:pointer;
+
+}
+
+h1{
+	font-family:arial;
+	position:relative;
+	top:-20px;
+}
+.checkbox{
+
+     margin-top:-12px;
+    color:grey;
+	
+	
+}
+.check{
+	color:grey;
+position:relative;
+right:-114px;
+
+
+}
+
+.signin{
+	margin-top:30px;
+	margin-bottom:20px;
+	margin-top:50px;
+	color:grey;
+	
+}
+
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+
+.index{
+	
+	background-color:rgba(0,0,0,0.5);
+	padding:10vh;
+}
+
+input[type="checkbox"]{
+	margin:3px;
+	margin-left:0px;
+	cursor:pointer;
+}
+
+input[type="submit"]:hover{
+	background-color:green;
+	color:white;
+	font-size:20px;
+	
+}
+input[type="text"]:hover{
+       background-color:rgba(20,20,0,0.9);
+	   
+	   border-bottom:1px solid red;
+	   border-right:1px solid red;
+	  color:white;
+	
+}
+	
+	input[type="password"]:hover{	
+	   background-color:rgba(20,20,0,0.9);
+	   border-bottom:1px solid red;
+	   border-right:1px solid red;
+	   	  color:white;
+	}
+	
+	p{
+		color:grey;
+	}
+	
+	

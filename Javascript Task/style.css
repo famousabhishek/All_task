@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(221,59,218);
+    background: linear-gradient(165deg,rgba(221,59,218,1)0%,rgba(65,51,227,1)100%);
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+img{
+    position: relative;
+    top: 7px;
+}
+
+h3{
+    position: relative;
+    top: 10px;
+}
+.card{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+.userprofile{
+    width: 50%;
+    border-radius: 50%;
+}
+.containe1{ 
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50PX;
+}
+
+.containe2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50PX;
+}
+.containe3{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50PX;
+}
+.visitprofiles {
+    background-color:aqua;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 900ms;
+}
+.visitprofiles:hover {
+    background-color:green;
+    color: white;
+    border-radius: 10px;
+
+}
