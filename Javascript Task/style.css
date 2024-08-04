@@ -72,3 +72,22 @@ h3{
     border-radius: 10px;
 
 }
+/* Media Queries for responsiv   */
+@media (max-width: 600px) {
+  .containe1,
+  .containe2,
+  .containe3 {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 70%;
+    margin-bottom: 40px;
+    position: relative;
+    left: 70px;
+  }
+  .card img.userprofile {
+    width: 80px;
+    height: 80px;
+  }
+}
