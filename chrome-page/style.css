@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3c4043;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Top Navigation */
+.top-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.nav-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-icon {
+    cursor: pointer;
+}
+
+.profile-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+/* Google Logo */
+.logo {
+    font-size: 90px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    font-family: 'Product Sans', Arial, sans-serif;
+}
+
+/* Search Container */
+.search-container {
+    width: 100%;
+    max-width: 750px;
+    margin-bottom: 35px;
+}
+
+.search-bar {
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+}
+
+.search-bar:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar:focus-within {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.search-icon {
+    flex-shrink: 0;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #202124;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    color: #5f6368;
+}
+
+.search-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon {
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: opacity 0.2s;
+}
+
+.icon:hover {
+    opacity: 0.7;
+}
+
+.ai-mode {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ai-mode:hover {
+    background-color: #f1f3f4;
+}
+
+.ai-mode span {
+    font-size: 14px;
+    color: #5f6368;
+    font-weight: 500;
+}
+
+/* Shortcuts */
+.shortcuts {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.shortcut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.shortcut:hover {
+    transform: translateY(-2px);
+}
+
+.shortcut-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.shortcut-icon.youtube {
+    background-color: #ff0000;
+}
+
+.shortcut-icon.chatgpt {
+    background-color: #5f6368;
+}
+
+.shortcut-icon.add {
+    background-color: #5f6368;
+}
+
+.shortcut-icon:hover {
+    opacity: 0.9;
+}
+
+.shortcut-label {
+    font-size: 13px;
+    color: white;
+    opacity: 0.9;
+}
+
+/* Customize Button */
+.customize-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1a73e8;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.customize-btn:hover {
+    background-color: #1557b0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 60px;
+    }
+
+    .search-container {
+        max-width: 90%;
+    }
+
+    .shortcuts {
+        gap: 30px;
+    }
+
+    .shortcut-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .shortcut-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+}
